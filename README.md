@@ -1,10 +1,35 @@
-# jiang-jung-dian demo
-A simple demo for AWS hackathon.\
+# Jiang-Jung-Dian Demo
+A simple demo for AWS hackathon.
 ![](./ui.PNG)
 
-# How To Use This
-1. Run `pip install -r requirements.txt` to install dependencies
-2. Run `python ui.py`
+# Prerequisites
+- Python >= 3.7
+- R >= 3.6.1
 
+# Setup
+- ~$ pip install -r requirements.txt~ to install all dependencies wirtten in python. 
+- To install all dependencies wirtten in R: 
+    - ~$ install.packages("data.table") ~
+    - ~$ install.packages("dplyr")~
+    - ~& install.packages("shiny")~
+    - ~$ install.packages("DT") ~
+    - ~$ install.packages("shinydashboard")~
+    - ~& install.packages("stringr")~
+
+# Execute
+1. ~$ python ui.py ~
+2. First Do enrollment:
+    - Enter "speaker's name" in "使用者名稱"
+    - Click "開始錄音" to start enroll the speaker's voice.
+    - Click "結束錄音" if one finished recording. 
+    - Iterate over the first three processes if there are multiple speakers. 
+    - After all speakers are enrolles, click "開始辨識". 
+3. Secondly, do recoding by clicking "會議錄音" t start recoding and clicking "結束會議" to finish recording.  
+
+# Processes
+![](./structure.PNG)
 # Result
-![](./result_with_shinny.png)
+
+
+# Acknowledgments
+
