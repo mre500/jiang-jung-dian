@@ -44,7 +44,7 @@ scipy==1.4.1
 six==1.15.0
 SoundFile==0.10.3.post1
 tensorboard==1.12.2
-tensorflow==1.13.0rc1
+tensorflow==1.15.2
 tensorflow-estimator==1.13.0
 termcolor==1.1.0
 threadpoolctl==2.0.0
