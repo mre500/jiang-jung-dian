@@ -107,22 +107,24 @@ def click():
 
 
 def get_report():
-    # 前處理，切音檔
-    transcribe_result_to_vggvox_wav()
-
-    # 語者辨識
-    print('開始進行語音辨識')
-    Speaker_IDs, speakers = recognizer()
-
-    # 把speak id 取代成名子
-    print('把speak id 取代成名子')
-    replaceName(Speaker_IDs, speakers)
-
-    # 執行關鍵詞擷取
-    comprehend(ID, KEY)
+    # # 前處理，切音檔
+    # transcribe_result_to_vggvox_wav()
+    #
+    # # 語者辨識
+    # print('開始進行語音辨識')
+    # Speaker_IDs, speakers = recognizer()
+    #
+    # # 把speak id 取代成名子
+    # print('把speak id 取代成名子')
+    # replaceName(Speaker_IDs, speakers)
+    #
+    # # 執行關鍵詞擷取
+    # comprehend(ID, KEY)
 
     # 製作報告
-    call_shiny()
+    t = threading.Thread(target=call_shiny)
+    t = t.start()
+    # call_shiny()
 
 
 
