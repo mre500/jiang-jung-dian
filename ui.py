@@ -29,8 +29,8 @@ make_dir()
 stop_event = threading.Event()
 
 # amzon 金鑰
-ID = ""
-KEY = ""
+ID = "AKIATPZTS3RWZXB7BJAD"
+KEY = "T73Ek7PvybawSr4mfFco2YC0Bm4onLrpDH8fimyj"
 
 class Threader(threading.Thread):
     def __init__(self, u, language, text, action, *args, **kwargs):
@@ -95,23 +95,6 @@ class Threader(threading.Thread):
             print('會議人數', count)
             aws_transcribe(ID, KEY, count)
 
-            # 前處理，切音檔
-            transcribe_result_to_vggvox_wav()
-
-            # 語者辨識
-            print('開始進行語音辨識')
-            Speaker_IDs, speakers = recognizer()
-
-            # 把speak id 取代成名子
-            print('把speak id 取代成名子')
-            replaceName(Speaker_IDs, speakers)
-
-            # 執行關鍵詞擷取
-            comprehend(ID, KEY)
-
-            # 製作報告
-            call_shiny()
-
         stream.close()
 
 
@@ -122,27 +105,25 @@ def click():
     # KEY = "XbbEKJRHSWpy0sdRD5vfhzRpkdA+j3DGYxxkJtlV"
     # load_lastest_recog_wav(ID=ID, KEY=KEY, BUCKET="mre500demo")
 
-    # 進行transcribe，計算會議人數
 
-    # print('會議人數', 2)
-    # aws_transcribe(ID, KEY, 2)
-    #
+def get_report():
     # 前處理，切音檔
-    # transcribe_result_to_vggvox_wav()
+    transcribe_result_to_vggvox_wav()
 
     # 語者辨識
-    # print('開始進行語音辨識')
-    # Speaker_IDs, speakers = recognizer()
-    #
-    # # 把speak id 取代成名子
-    # print('把speak id 取代成名子')
-    # replaceName(Speaker_IDs, speakers)
-    #
-    # # 執行關鍵詞擷取
-    # comprehend(ID, KEY)
-    #
-    # # 製作報告
-    # call_shiny()
+    print('開始進行語音辨識')
+    Speaker_IDs, speakers = recognizer()
+
+    # 把speak id 取代成名子
+    print('把speak id 取代成名子')
+    replaceName(Speaker_IDs, speakers)
+
+    # 執行關鍵詞擷取
+    comprehend(ID, KEY)
+
+    # 製作報告
+    call_shiny()
+
 
 
 def UploadAction(entry_text, event=None):
@@ -229,5 +210,6 @@ if __name__ == '__main__':
                                                                             action='recog'))
     recognition_button.place(x=80, y=255)
     recognition_stop_button = tk.Button(window, text='結束會議', command=stop_event.set).place(x=165, y=255)
+    get_report_button = tk.Button(window, text='產生分析報告', command=get_report).place(x=250, y=255)
 
     window.mainloop()
