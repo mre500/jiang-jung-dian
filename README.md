@@ -1,6 +1,6 @@
 # Jiang-Jung-Dian Demo
-A simple demo for AWS hackathon.\
-![](./ui.PNG)
+A simple [demo](website) for AWS hackathon.
+
 
 # Prerequisites
 - Python >= 3.7
@@ -17,8 +17,9 @@ A simple demo for AWS hackathon.\
     - `$ install.packages("stringr")`
 
 # Execute
-1. `$ python ui.py`
-2. First Do enrollment:
+1. Fist, run `$ python ui.py`, a GUI will pop up. \
+![](./ui.PNG)
+2. Then do enrollment:
     - Enter "speaker's name" in `使用者名稱`
     - Click `開始錄音` to start enroll the speaker's voice.
     - Click `結束錄音` if one finished recording. 
@@ -27,10 +28,10 @@ A simple demo for AWS hackathon.\
 3. Secondly, do recoding by clicking `會議錄音` to start recoding and clicking `結束會議` to finish recording.  
 
 # Processes behind the scene
-![](./structure.PNG)\
+![](./structure.PNG)
 
 # Result
-![](./result_with_shinny.png)\
+![](./result_with_shinny.png)
 
 # Acknowledgments
 Thanks [Hack For Good](https://awstaiwanhackathon2020.splashthat.com/) hold by AWS for providing the AWS Services including Amazon Transcribe and Amazon Comprehend. 
