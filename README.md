@@ -23,8 +23,8 @@ A simple [demo](website) for AWS hackathon.
      
 2. Then do enrollment:
     - Enter "speaker's name" in `使用者名稱`
-    - Click `開始錄音` to start enroll the speaker's voice.
-    - Click `結束錄音` if one finished recording. 
+    - Click `開始錄音` to enroll the speaker's voice.
+    - Click `結束錄音` if one finishes recording. 
     - Iterate over the first three processes if there are multiple speakers. 
     - After all speakers are enrolled, click `開始辨識`. 
 3. Last, start to record by clicking `會議錄音`, and finish recording by clicking `結束會議`.  
