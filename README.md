@@ -18,6 +18,7 @@ A simple [demo](website) for AWS hackathon.
 
 # Execute
 1. First, run `$ python ui.py`, a GUI will pop up. \
+
      <img src=./ui.png width="400" height="300">
      
 2. Then do enrollment:
