@@ -48,7 +48,12 @@ def TEST(filename, window=3):
             prediction.append(speaker)
             os.remove("temp.wav")
     else:
-        speaker = test(filename=filename)
+        if len(wav) <= 1000: 
+            ratio = int(1000 / len(wav)) + 1
+            (wav * ratio).export("./temp.wav", format = "wav")
+            speaker = test(filename = "./temp.wav")
+        else: 
+            speaker = test(filename = filename)
         prediction.append(speaker)
 
     result = {i: prediction.count(i) / len(prediction) for i in np.unique(speakers).tolist()}
