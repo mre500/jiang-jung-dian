@@ -29,15 +29,15 @@ make_dir()
 stop_event = threading.Event()
 
 # amzon 金鑰
-ID = "AKIATPZTS3RWZXB7BJAD"
-KEY = "T73Ek7PvybawSr4mfFco2YC0Bm4onLrpDH8fimyj"
+ID = ""
+KEY = ""
 
 class Threader(threading.Thread):
     def __init__(self, u, language, text, action, *args, **kwargs):
         threading.Thread.__init__(self, *args, **kwargs)
         self.daemon = True
         self.user = u
-        self.language = 'cn' if language == '中文' else 'en'
+        self.language = language
         self.text = text
         self.action = action
 
@@ -166,10 +166,10 @@ if __name__ == '__main__':
 
 
     # 建立註冊元件
-    enroll = tk.Label(window, text='選擇語言').place(x=0, y=30)
-    combo = ttk.Combobox(window, values=['中文', '英文'],
-                         state="readonly")
-    combo.place(x=80, y=30)
+    # enroll = tk.Label(window, text='選擇語言').place(x=0, y=30)
+    # combo = ttk.Combobox(window, values=['中文', '英文'],
+    #                      state="readonly")
+    # combo.place(x=80, y=30)
 
 
     # 瀏覽檔案
@@ -193,11 +193,11 @@ if __name__ == '__main__':
     # 開始錄製按鈕
     # record_label = tk.Label(window, text='Record').place(x=150, y=260)
     record_button = tk.Button(window, text='開始錄音', command=lambda: Threader(user_text.get(),
-                                                                            combo.get(),
+                                                                            'en',
                                                                             enroll_text_list,
-                                                                            action='enroll')).place(x=250, y=25)
-    record_stop_button = tk.Button(window, text='結束錄音', command=stop_event.set).place(x=320, y=25)
-    test_button = tk.Button(window, text='開始辨識', command=click).place(x=390, y=25)
+                                                                            action='enroll')).place(x=0, y=25)
+    record_stop_button = tk.Button(window, text='結束錄音', command=stop_event.set).place(x=70, y=25)
+    test_button = tk.Button(window, text='開始辨識', command=click).place(x=140, y=25)
 
     # 插入水平線
     # line2 = ttk.Separator(window,).place(x=0, y=290, relwidth=1)
