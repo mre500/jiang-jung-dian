@@ -1,5 +1,5 @@
 # jiang-jung-dian demo
-A simple demo for AWS hackathon.
+A simple demo for AWS hackathon.\
 ![](./ui.PNG)
 
 # How To Use This
@@ -7,3 +7,4 @@ A simple demo for AWS hackathon.
 2. Run `python ui.py`
 
 # Result
+![]result_with_shinny.png
