@@ -1,6 +1,6 @@
 # jiang-jung-dian demo
 A simple demo for AWS hackathon.
-![](./ui.png)
+![](./ui.PNG)
 
 # How To Use This
 1. Run `pip install -r requirements.txt` to install dependencies
