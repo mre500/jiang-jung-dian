@@ -36,4 +36,4 @@ A simple [demo](website) for AWS hackathon.
 
 # Acknowledgments
 Thanks [Hack For Good](https://awstaiwanhackathon2020.splashthat.com/) hold by AWS for providing the AWS Services including Amazon Transcribe and Amazon Comprehend. 
-Special thanks to Chen, StuartSolutions Architect at Amazon Web Services (AWS), for technical supports.  
+Special thanks to Chen, Stuart, one of Solutions Architects at Amazon Web Services (AWS), for technical supports.  
