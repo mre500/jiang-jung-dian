@@ -66,7 +66,10 @@ def transcribe_result_to_vggvox_wav():
     audio_data = AudioSegment.from_wav("./data/recog/" + selected_recog_data)
 
     for i in range(len(max_length_timestamp_of_speakers)):
-        speaker_label = "spk_" + str(i)
+        if(len(max_length_timestamp_of_speakers) == 1): 
+            speaker_label = "spk_1"
+        else: 
+            speaker_label = "spk_" + str(i)
         duration = max_length_timestamp_of_speakers[speaker_label]["duration"]
         start_time = max_length_timestamp_of_speakers[speaker_label]["start_time"]
         end_time = max_length_timestamp_of_speakers[speaker_label]["end_time"]
