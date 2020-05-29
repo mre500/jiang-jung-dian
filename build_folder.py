@@ -23,4 +23,6 @@ def make_dir():
         os.mkdir("./data/comph")
     if not os.path.isdir("./data/csv"):
         os.mkdir("./data/csv")
+    if not os.path.isdir('./data/report'):
+        os.mkdir('./data/report')
 
