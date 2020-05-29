@@ -17,7 +17,7 @@ A simple [demo](website) for AWS hackathon.
     - `$ install.packages("stringr")`
 
 # Execute
-1. Fist, run `$ python ui.py`, a GUI will pop up. \
+1. First, run `$ python ui.py`, a GUI will pop up. \\
 ![](./ui.PNG)
 2. Then do enrollment:
     - Enter "speaker's name" in `使用者名稱`
