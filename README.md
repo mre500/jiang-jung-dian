@@ -1,4 +1,4 @@
-# Jiang-Jung-Dian Demo
+# Jiang-Jung-Dian (講重點)
 A simple [demo](website) for AWS hackathon.
 
 
@@ -23,18 +23,18 @@ A simple [demo](website) for AWS hackathon.
      
 2. Then do enrollment:
     - Enter "speaker's name" in `使用者名稱`
-    - Click `開始錄音` to start enroll the speaker's voice.
-    - Click `結束錄音` if one finished recording. 
+    - Click `開始錄音` to enroll the speaker's voice.
+    - Click `結束錄音` if one finishes recording. 
     - Iterate over the first three processes if there are multiple speakers. 
-    - After all speakers are enrolles, click `開始辨識`. 
-3. Secondly, do recoding by clicking `會議錄音` to start recoding and clicking `結束會議` to finish recording.  
+    - After all speakers are enrolled, click `開始辨識`. 
+3. Last, start to record by clicking `會議錄音`, and finish recording by clicking `結束會議`.  
 
 # Processes behind the scene
 ![](./structure.PNG)
 
 # Result
-![](./result_with_shinny.png)
+![](./result_with_shiny.png)
 
 # Acknowledgments
 Thanks [Hack For Good](https://awstaiwanhackathon2020.splashthat.com/) hold by AWS for providing the AWS Services including Amazon Transcribe and Amazon Comprehend. 
-Special thanks to Chen, Stuart, one of Solutions Architects at Amazon Web Services (AWS), for technical supports.  
+Special thanks to Stuart Chen, one of Solutions Architects at Amazon Web Services (AWS), for technical supports.  
