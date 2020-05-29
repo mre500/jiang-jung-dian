@@ -33,7 +33,7 @@ A simple [demo](website) for AWS hackathon.
 ![](./structure.PNG)
 
 # Result
-![](./result_with_shinny.png)
+![](./result_with_shiny.png)
 
 # Acknowledgments
 Thanks [Hack For Good](https://awstaiwanhackathon2020.splashthat.com/) hold by AWS for providing the AWS Services including Amazon Transcribe and Amazon Comprehend. 
