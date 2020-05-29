@@ -1,0 +1,1 @@
+"C:\Program Files\R\R-4.0.0\bin\R.exe" --no-save --slave < shiny.R
