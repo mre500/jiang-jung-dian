@@ -20,7 +20,7 @@ def filename_to_time_order(x):
     return y
 
 
-def get_last_file():
+def get_last_file(s3):
     key_response = s3.list_objects(Bucket='mre500demo')
     transcribe_data = []
     for obj in key_response['Contents']:
@@ -44,7 +44,7 @@ def aws_transcribe(ID, KEY, count):
                               aws_access_key_id=ID,
                               aws_secret_access_key=KEY)
 
-    selected_transcribe_data = get_last_file()
+    selected_transcribe_data = get_last_file(s3)
     # job_name = selected_transcribe_data
     job_name = 'transcribe' + selected_transcribe_data[7:]
     job_uri = "https://mre500demo.s3.amazonaws.com/rawData/" + selected_transcribe_data + '.wav'

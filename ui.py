@@ -116,7 +116,7 @@ class Threader(threading.Thread):
 
 
 def click():
-    # enrollWrapper(folderpath="data/enroll/wav/")
+    enrollWrapper(folderpath="data/enroll/wav/")
     # 將會議影片上傳至s3
     # ID = "AKIATPZTS3RW53DJBFDU"
     # KEY = "XbbEKJRHSWpy0sdRD5vfhzRpkdA+j3DGYxxkJtlV"
@@ -131,18 +131,18 @@ def click():
     # transcribe_result_to_vggvox_wav()
 
     # 語者辨識
-    print('開始進行語音辨識')
-    Speaker_IDs, speakers = recognizer()
-
-    # 把speak id 取代成名子
-    print('把speak id 取代成名子')
-    replaceName(Speaker_IDs, speakers)
-
-    # 執行關鍵詞擷取
-    comprehend(ID, KEY)
-
-    # 製作報告
-    call_shiny()
+    # print('開始進行語音辨識')
+    # Speaker_IDs, speakers = recognizer()
+    #
+    # # 把speak id 取代成名子
+    # print('把speak id 取代成名子')
+    # replaceName(Speaker_IDs, speakers)
+    #
+    # # 執行關鍵詞擷取
+    # comprehend(ID, KEY)
+    #
+    # # 製作報告
+    # call_shiny()
 
 
 def UploadAction(entry_text, event=None):
