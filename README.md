@@ -18,7 +18,7 @@ A simple [demo](website) for AWS hackathon.
 
 # Execute
 1. First, run `$ python ui.py`, a GUI will pop up. \
-     ![](./ui.png) 
+     <img src=./ui.png width="100" height="100">
      
 2. Then do enrollment:
     - Enter "speaker's name" in `使用者名稱`
