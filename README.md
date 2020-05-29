@@ -1,5 +1,5 @@
 # Jiang-Jung-Dian Demo
-A simple demo for AWS hackathon.
+A simple demo for AWS hackathon.\
 ![](./ui.PNG)
 
 # Prerequisites
@@ -7,14 +7,14 @@ A simple demo for AWS hackathon.
 - R >= 3.6.1
 
 # Setup
-- ~$ pip install -r requirements.txt~ to install all dependencies wirtten in python. 
+- `$ pip install -r requirements.txt` to install all dependencies wirtten in python. 
 - To install all dependencies wirtten in R: 
     - `$ install.packages("data.table")`
     - `$ install.packages("dplyr")`
-    - `& install.packages("shiny")`
+    - `$ install.packages("shiny")`
     - `$ install.packages("DT")`
     - `$ install.packages("shinydashboard")`
-    - `& install.packages("stringr")`
+    - `$ install.packages("stringr")`
 
 # Execute
 1. `$ python ui.py`
@@ -26,10 +26,12 @@ A simple demo for AWS hackathon.
     - After all speakers are enrolles, click `開始辨識`. 
 3. Secondly, do recoding by clicking `會議錄音` to start recoding and clicking `結束會議` to finish recording.  
 
-# Processes
-![](./structure.PNG)
-# Result
+# Processes behind the scene
+![](./structure.PNG)\
 
+# Result
+![](./result_with_shinny.png)\
 
 # Acknowledgments
-
+Thanks [Hack For Good](https://awstaiwanhackathon2020.splashthat.com/) hold by AWS for providing the AWS Services including Amazon Transcribe and Amazon Comprehend. 
+Special thanks to Chen, StuartSolutions Architect at Amazon Web Services (AWS), for technical supports.  
