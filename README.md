@@ -7,4 +7,4 @@ A simple demo for AWS hackathon.\
 2. Run `python ui.py`
 
 # Result
-![]result_with_shinny.png
+![](./result_with_shinny.png)
