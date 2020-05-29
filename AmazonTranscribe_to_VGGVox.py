@@ -37,10 +37,16 @@ def transcribe_result_to_vggvox_wav():
     number_of_speakers = transcribe_data["results"]["speaker_labels"].get("speakers")
     max_length_timestamp_of_speakers = {}
     for i in range(number_of_speakers):
-        max_length_timestamp_of_speakers["spk_" + str(i)] = {
-            "duration": 0,
-            "start_time": 0,
-            "end_time": 0}
+        if(number_of_speakers == 1): 
+            max_length_timestamp_of_speakers["spk_1"] = {
+                "duration": 0,
+                "start_time": 0,
+                "end_time": 0}
+        if(number_of_speakers != 1): 
+            max_length_timestamp_of_speakers["spk_" + str(i)] = {
+                "duration": 0,
+                "start_time": 0,
+                "end_time": 0}
 
     segments_of_speakers = transcribe_data["results"]["speaker_labels"].get("segments")
     for i in range(len(segments_of_speakers)):
