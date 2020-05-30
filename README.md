@@ -36,7 +36,7 @@ It is demonstrated by using 2016 America presidential debate on [youtube](https:
 ![](./structure.PNG)
 
 # Result
-![](./result_with_shinny.png)
+![](./result_with_shiny.png)
 
 # Contributors
 - Ray Yu (yuchio8156@gmail.com)
