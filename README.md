@@ -2,7 +2,7 @@
 It offers users a  convenience way to convert recording audios to transcript with identified speakers. 
 The converting part is done by utilizing Amazon Transcribe and Amazon Comprehend, while the identifying part is achieved by utilizing  [VGGVox](https://github.com/linhdvu14/vggvox-speaker-identification) speaker identification model.
 Here is the [link](https://drive.google.com/file/d/1whhz6bFP_wMR-ODrjzV7BuTntO5tLLCG/view) of a simple deom vedio for AWS hackathon.
-It is demonstrated by using 2016 America presidential debate on [youtobe](https://www.youtube.com/watch?v=3M1QBzdpu4Y).
+It is demonstrated by using 2016 America presidential debate on [youtube](https://www.youtube.com/watch?v=3M1QBzdpu4Y).
 
 # Prerequisites
 - Python >= 3.7
