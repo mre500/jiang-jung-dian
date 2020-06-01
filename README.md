@@ -21,7 +21,7 @@ It is demonstrated by using 2016 America presidential debate on [youtube](https:
 # Execute
 1. First, run `$ python ui.py`, a GUI will pop up. \
 
-     <img src=./ui.png width="400" height="300">
+     <img src=./ui.PNG width="400" height="300">
      
 2. Then do enrollment:
     - Enter "speaker's name" in `使用者名稱`
