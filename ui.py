@@ -104,10 +104,6 @@ def click():
         messagebox.showinfo("提示", "請點選錄音後再註冊")
         return
     enrollWrapper(folderpath="data/enroll/wav/")
-    # 將會議影片上傳至s3
-    # ID = "AKIATPZTS3RW53DJBFDU"
-    # KEY = "XbbEKJRHSWpy0sdRD5vfhzRpkdA+j3DGYxxkJtlV"
-    # load_lastest_recog_wav(ID=ID, KEY=KEY, BUCKET="mre500demo")
 
 
 def get_report():
@@ -124,12 +120,6 @@ def get_report():
 
     # 執行關鍵詞擷取
     comprehend(ID, KEY)
-
-    # 製作報告
-    # t = threading.Thread(target=call_shiny)
-    # t = t.start()
-    # call_shiny()
-
 
 
 def UploadAction(entry_text, event=None):
